@@ -4,6 +4,7 @@ dotenv.config();
 import "./lib/connecting.js";
 import morgan from "morgan";
 import cors from "cors";
+import productsRouter from "./routes/productsRouter.js";
 const PORT = process.env.PORT;
 
 const app = express();
@@ -18,10 +19,7 @@ app.use(
 );
 
 //set routes
-
-app.get("/api/products", (req, res) => {
-  res.status(200).json([]);
-});
+app.use("api", productsRouter);
 
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
