@@ -21,6 +21,17 @@ app.use(
 //set routes
 app.use("api", productsRouter);
 
+app.use("/:notfound", (req, res, next) => {
+  try {
+    error.status = 404;
+    error.message = "Page not Found";
+    next(error);
+  } catch (error) {
+    error.status = 500;
+    next(error);
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
 });
