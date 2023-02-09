@@ -5,6 +5,8 @@ import "./lib/connecting.js";
 import morgan from "morgan";
 import cors from "cors";
 import productsRouter from "./routes/productsRouter.js";
+import error from "./middleware/error.js";
+import notFound from "./middleware/notFound.js";
 const PORT = process.env.PORT;
 
 const app = express();
@@ -19,18 +21,11 @@ app.use(
 );
 
 //set routes
-app.use("api", productsRouter);
+app.use("/api", productsRouter);
 
-app.use("/:notfound", (req, res, next) => {
-  try {
-    error.status = 404;
-    error.message = "Page not Found";
-    next(error);
-  } catch (error) {
-    error.status = 500;
-    next(error);
-  }
-});
+app.use("/:notfound", notFound);
+
+app.use(error);
 
 app.listen(PORT, () => {
   console.log("Server is running on port " + PORT);
