@@ -23,8 +23,8 @@ app.use(
 );
 
 //set routes
-app.use("/api", productsRouter);
-app.use("/users", userRoute);
+app.use("/api/products", productsRouter);
+app.use("/api/users", userRoute);
 
 app.use(express.static("uploads"));
 app.use("/:notfound", notFound);

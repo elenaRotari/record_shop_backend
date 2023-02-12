@@ -17,7 +17,7 @@ const upload = multer({ dest: "uploads" });
 const productsRouter = express.Router();
 
 productsRouter
-  .route("/products")
+  .route("/")
   .get(validate(getSchemaProducts), getAll)
   .post(upload.single("picture"), validate(postSchemaProducts), postOne);
 
