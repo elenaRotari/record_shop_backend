@@ -24,7 +24,7 @@ export const postOne = async (req, res, next) => {
     res.status(201).send(
       await Product.create({
         ...req.body,
-        picture: `${process.env.HOST}:${process.env.PORT}/api/products/${req.file.path}`,
+        picture: `${process.env.HOST}:${process.env.PORT}/${req.file.filename}`,
       })
     );
   } catch (error) {

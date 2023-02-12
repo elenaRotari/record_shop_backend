@@ -1,0 +1,101 @@
+[
+  {
+    "_id": "63e8ea32949033b200a0d3f8",
+    "title": "Antiexemplu",
+    "artist": "Carla's Dream",
+    "year": "2017",
+    "price": " € 34",
+    "picture": "http://localhost:4321/eb922282410a0c81089b61b4eb611440",
+    "createdAt": "2023-02-12T13:31:30.859Z",
+    "updatedAt": "2023-02-12T13:31:30.859Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8ead9949033b200a0d3fa",
+    "title": "Bestiarium",
+    "artist": "Zdob & Zdub",
+    "year": "2022",
+    "price": " € 30",
+    "picture": "http://localhost:4321/api/products/uploads/3edb8970f3b56655db0b2958ce12ba69",
+    "createdAt": "2023-02-12T13:34:17.759Z",
+    "updatedAt": "2023-02-12T13:34:17.759Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8eb5e949033b200a0d3fd",
+    "title": "Pastila",
+    "artist": "Irina Rimes",
+    "year": "2021",
+    "price": " € 33",
+    "picture": "http://localhost:4321/api/products/uploads/13e3316ae1421d33af7ee5724e00f409",
+    "createdAt": "2023-02-12T13:36:30.408Z",
+    "updatedAt": "2023-02-12T13:36:30.408Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8ec47949033b200a0d401",
+    "title": "Motanas",
+    "artist": "The Motanas",
+    "year": "2020",
+    "price": " € 27",
+    "picture": "http://localhost:4321/api/products/uploads/f424fc86d67d3babb79a37fa0d4a233e",
+    "createdAt": "2023-02-12T13:40:23.126Z",
+    "updatedAt": "2023-02-12T13:40:23.126Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8eda1949033b200a0d403",
+    "title": "Backstreet's back",
+    "artist": "Backstreet Boys",
+    "year": "2007",
+    "price": " € 17",
+    "picture": "http://localhost:4321/api/products/uploads/45a00c4716dd9bb87672869a80b6e7fd",
+    "createdAt": "2023-02-12T13:46:09.051Z",
+    "updatedAt": "2023-02-12T13:46:09.051Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8ee93949033b200a0d407",
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "year": "1982",
+    "price": " € 23",
+    "picture": "http://localhost:4321/api/products/uploads/a9dd171c02291babe88e09189754b00c",
+    "createdAt": "2023-02-12T13:50:11.047Z",
+    "updatedAt": "2023-02-12T13:50:11.047Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8ef06949033b200a0d409",
+    "title": "Hot Pink",
+    "artist": "Doja Cat",
+    "year": "2003",
+    "price": " € 20",
+    "picture": "http://localhost:4321/api/products/uploads/a53d13077a859fb971f25ae72f93a2d9",
+    "createdAt": "2023-02-12T13:52:06.832Z",
+    "updatedAt": "2023-02-12T13:52:06.832Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8f21457a4c2703da0c31c",
+    "title": "Trustfall",
+    "artist": "Pink",
+    "year": "2003",
+    "price": " € 15.99",
+    "picture": "http://localhost:4321/api/products/uploads/1d755b45a2c19095f72f946d7cd179d7",
+    "createdAt": "2023-02-12T14:05:08.544Z",
+    "updatedAt": "2023-02-12T14:05:08.544Z",
+    "__v": 0
+  },
+  {
+    "_id": "63e8f26557a4c2703da0c31e",
+    "title": "My Music",
+    "artist": "Andre Rieu",
+    "year": "2022",
+    "price": " € 18.99",
+    "picture": "http://localhost:4321/api/products/uploads/a5fd4e1833c01d5d50ca58e776726028",
+    "createdAt": "2023-02-12T14:06:29.178Z",
+    "updatedAt": "2023-02-12T14:06:29.178Z",
+    "__v": 0
+  }
+]

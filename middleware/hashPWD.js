@@ -2,6 +2,7 @@ import bcrypt from "bcrypt";
 
 export default async (req, res, next) => {
   try {
+    console.log(req.body);
     if (!req.body.password) {
       return res.status(404).send({ message: " Password must be provide" });
     } else {

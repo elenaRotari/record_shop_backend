@@ -33,11 +33,13 @@ export const getAllSearched = async (search) => {
       {
         title: {
           $regex: ".*" + search + ".*",
+          $options: "i",
         },
       },
       {
         artist: {
           $regex: ".*" + search + ".*",
+          $options: "i",
         },
       },
     ],
