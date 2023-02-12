@@ -5,8 +5,10 @@ const productSchema = mongoose.Schema(
     title: String,
     artist: String,
     year: Number,
-    picture: String,
     price: Number,
+    picture: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
