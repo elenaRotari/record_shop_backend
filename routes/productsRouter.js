@@ -16,6 +16,6 @@ productsRouter
   .route("/products")
   .get(getAll)
   .post(upload.single("picture"), postOne);
-productsRouter.route("/:id").get(getOne).put(updateOne).delete(deleteOne);
 
+productsRouter.route("/:id").get(getOne).put(updateOne).delete(deleteOne);
 export default productsRouter;

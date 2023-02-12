@@ -13,4 +13,27 @@ const productSchema = mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Product", productSchema);
+const Product = mongoose.model("Product", productSchema);
+
+export const getAllSearched = async (search) => {
+  console.log(search);
+
+  const results = await Product.find({
+    $or: [
+      {
+        title: {
+          $regex: ".*" + search + ".*",
+        },
+      },
+      {
+        artist: {
+          $regex: ".*" + search + ".*",
+        },
+      },
+    ],
+  });
+  console.log(results);
+
+  return results;
+};
+export default Product;

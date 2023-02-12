@@ -1,11 +1,17 @@
 import Product from "../modules/Product.js";
+import { getAllSearched } from "../modules/Product.js";
 export const getAll = async (req, res, next) => {
   try {
-    res.status(200).send(await Product.find());
+    if (req.query) {
+      res.status(200).send(await getAllSearched(req.query.search));
+    } else {
+      res.status(200).send(await Product.find());
+    }
   } catch (error) {
     next(error);
   }
 };
+
 export const getOne = async (req, res, next) => {
   try {
     res.status(200).send(await Product.findById(req.params.id));
