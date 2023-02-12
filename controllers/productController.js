@@ -2,7 +2,7 @@ import Product from "../modules/Product.js";
 import { getAllSearched } from "../modules/Product.js";
 export const getAll = async (req, res, next) => {
   try {
-    if (req.query) {
+    if (req.query.search) {
       res.status(200).send(await getAllSearched(req.query.search));
     } else {
       res.status(200).send(await Product.find());

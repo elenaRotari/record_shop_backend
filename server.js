@@ -7,6 +7,7 @@ import cors from "cors";
 import productsRouter from "./routes/productsRouter.js";
 import error from "./middleware/error.js";
 import notFound from "./middleware/notFound.js";
+import userRoute from "./routes/userRoute.js";
 
 const PORT = process.env.PORT;
 
@@ -23,6 +24,7 @@ app.use(
 
 //set routes
 app.use("/api", productsRouter);
+app.use("/users", userRoute);
 
 app.use(express.static("uploads"));
 app.use("/:notfound", notFound);

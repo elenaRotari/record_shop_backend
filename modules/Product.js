@@ -2,10 +2,22 @@ import mongoose from "mongoose";
 
 const productSchema = mongoose.Schema(
   {
-    title: String,
-    artist: String,
-    year: Number,
-    price: Number,
+    title: {
+      type: String,
+      required: true,
+    },
+    artist: {
+      type: String,
+      required: true,
+    },
+    year: {
+      type: String,
+      required: true,
+    },
+    price: {
+      type: String,
+      required: true,
+    },
     picture: {
       type: String,
     },
@@ -16,8 +28,6 @@ const productSchema = mongoose.Schema(
 const Product = mongoose.model("Product", productSchema);
 
 export const getAllSearched = async (search) => {
-  console.log(search);
-
   const results = await Product.find({
     $or: [
       {
@@ -32,7 +42,6 @@ export const getAllSearched = async (search) => {
       },
     ],
   });
-  console.log(results);
 
   return results;
 };
